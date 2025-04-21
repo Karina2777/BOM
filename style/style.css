@@ -1,0 +1,247 @@
+body{
+    background: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(70, 70, 70);
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+video{
+    width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+
+
+
+
+
+
+#phone{
+    width: 420px;
+    height: 700px;
+    border: 12px solid black;
+    border-radius: 30px;
+    margin-left: 500px;
+   
+}
+header{
+   margin: 3px;
+}
+#timePhone{
+    font-weight:bolder;
+    font-size: 18px;
+    color: black;
+    margin:-2px 0 0 8px;
+}
+#black{
+    border: 5px solid black;
+    background-color: black;
+    border-radius: 12px;
+    color: black;
+    width: 100px;
+    height: 33px;
+    margin: -17px 0 0 115px;
+}
+#right, img{
+    width: 20px;
+    height: 20px;
+    margin:-2px 0 0 8px;
+}
+
+header{
+    padding: 5px;
+    
+}
+#name{
+    color: black;
+    font-weight:500;
+    font-size: 18px;
+    margin: 10px 0 0 100px;
+    text-align: center;
+    
+}
+#online{
+    color: #e9078b;
+    font-size: 10px;
+    margin: -19px 0 0 164px;
+}
+#ava{
+    width: 53px;
+    height: 47px;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-top: 5px;
+}
+#exit{
+    display: inline-block;
+    font-size: 29px;
+    color: #e9078b;
+    transform: scaleX(-1);
+    margin-top: 7px;
+    margin-left: 4px;
+}
+#chat{
+    padding: 5px;
+    background: #ffdef2;
+    background: linear-gradient(0deg,rgba(255, 222, 242, 1) 24%, rgba(255, 138, 190, 1) 100%);
+    color: black;
+}
+.play{
+    margin-left: -2px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 900;
+    color: #000000;
+    border-radius: 5px;
+
+}
+.icons-audio{
+    margin-left: -4px;
+    width: 75px;
+    height: 25px;
+}
+#message {
+    height: 520px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+#message::-webkit-scrollbar {
+    display: none; 
+}
+.fromMam{
+    margin: 5px auto 10px 5px;
+    align-self: flex-start;
+    text-align: left;
+    padding: 5px;
+    background-color: #f73da9;
+    border: 1px solid #960559;
+    border-radius: 7px;
+}
+.fromMe{
+    margin: 5px 5px 10px auto;
+    align-self: flex-end;
+    text-align: right;
+    padding: 5px 3px 0 3px;
+    background-color: #f73da9;
+    border: 1px solid #960559;
+    border-radius: 10px;
+}
+.fromMam-speaker{
+    margin-left: 7px;
+    border-radius: 10px;
+}
+#love{
+   margin: 1px 0 0 1px;
+}
+#answer{
+    margin-top: 2px;
+}
+
+#send{
+    background-color: gray;
+    height: 55px;
+    z-index: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#search{
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 5px;
+}
+nav{
+    margin: 0 0 0 10px;
+    width: 230px;
+    padding-top: 5px;
+    margin-left:  50px;
+}
+#images{
+    background: none;
+   font-size: 30px;
+    border: none;
+   margin: -8px 3px 0 -9px;
+    position: absolute;
+}
+#geo{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin:-33px -50px 10px 278px; 
+}
+#geo:hover{
+    cursor: pointer;
+}
+#video{
+    width: 25px;
+    height: 25px;
+    margin: -50px -50px 10px 358px;
+    position: absolute;
+}
+#video:hover{
+    cursor: pointer;
+}
+#speaker1-sound, #speaker2-sound{
+  margin: 3px 0 0 1px;
+  width: 270px;
+}
+#play{
+    width: 23px;
+    height: 25px;
+    position: absolute;
+    margin:-33px -80px 15px 319px;
+}
+#play:hover{
+    cursor: pointer;
+}
+video.circular-video {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #aaa;
+  }
+#videoPreview{
+    border-radius: 50%;
+    margin: 20px auto;
+    height: 600px;
+    width:200px;
+    
+}
+ul{
+    margin-left: -15px;
+} 

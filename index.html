@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style/style.css"/>
+</head>
+<body>
+  <div id="phone">
+    <header>
+      <div class="row">
+        <div class="col-1">
+          <p id="timePhone">11:11</p>
+        </div>
+        <p id="black">camera</p>
+        <div class="col-md-4 ms-auto">
+          <img id="signal" src="./img/signal.png" alt="Signal" />
+          <img id="wi-fi" src="./img/wi-fi.png" alt="wi-fi" />
+          <img id="battery" src="./img/half-battery.png" alt="battery" />
+        </div>
+      </div>
+      <hr style="border: 1.5px solid black; margin: -1px 0 0 -8px; width: 400px;" />
+      <div class="row">
+        <div class="col-1">
+          <span id="exit">➯</span>
+        </div>
+        <div class="col order-1">
+          <p id="name">мамуля ♡</p>
+        </div>
+        <div class="col-md-4 order-2">
+          <img id="ava" src="./img/6q4cd423.png" alt="ava" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p id="online">у мережі</p>
+        </div>
+      </div>
+    </header>
+    <hr style="border: 1.5px solid black; margin: -3px 0 0 0; width: 400px;" />
+
+    <div id="chat">
+      <div id="message">
+        <div class="fromMam">
+          <p class="mam">доця будеш пекти паску</p>
+          <ul>
+           <p>10 родичам </p>
+           <p> 5 на сім'ю </p>
+          </ul>
+        </div>
+
+        <div class="fromMam-speaker">
+            <audio id="speaker1-sound" src="./c04753e7649c6fb.mp3" preload="auto" controls></audio>
+        </div>
+
+        <div class="fromMe">
+          <p id="answer">мама навіщо так багато 😭</p>
+        </div>
+
+        <div class="fromMam">
+          <p id="love">і я тебе люблю❤️</p>
+        </div>
+
+        <div class="fromMam-speaker">
+            <audio id="speaker2-sound" src="./179407_3332423-lq.mp3" preload="auto" controls></audio>
+        </div>
+        <video id="videoPreview" autoplay  style="display: none;"></video>
+        <p id="geo-status" class="fromMe"></p>
+        <input type="text" id="mic-status" readonly style="border:none; background:none; width:150px; color:#e9078b;" />
+       
+      </div>
+    </div>
+
+    <div id="send">
+      <button  id="images">✉</button>
+      <nav>
+        <input id="search"  type="search" placeholder="Message" aria-label="Search" />
+      </nav>
+
+      <div id="geo-check">
+        <img onclick=" checkGeolocation()" id="geo" src="./img/khl8viqr-removebg-preview.png" alt="geo">
+      </div>
+
+      <div id="voice">
+        <img onclick="startRecording()" id="play" src="./img/zxksl31m-removebg-preview.png" alt="voice">
+      </div>
+      <div id="videoRecordArea">
+        <img onclick=" toggleVideoRecording()" id="video" src="./img/3lhpkpep-removebg-preview.png" alt="video">
+        <p id="video-status"></p>
+      </div>
+    </div>
+  </div>
+
+  <pre id="userData" style="display: none;"></pre>
+  <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
