@@ -4,7 +4,6 @@ body{
     margin: 0;
     padding: 20px;
 }
-
 .container{
     width: 1000px;
     margin: 0 auto;
@@ -13,15 +12,10 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 15px rgb(70, 70, 70);
 }
-
-
 h1{
     text-align: center;
     margin-bottom: 40px;
 }
-
-
-
 button{
     padding: 10px 20px;
     margin-top: 10px;
@@ -29,7 +23,6 @@ button{
     font-size: 18px;
     cursor: pointer;
 }
-
 video{
     width: 100%;
     max-height: 300px;
@@ -37,20 +30,12 @@ video{
     border-radius: 10px;
     border: 2px solid #ccc;
 }
-
-
-
-
-
-
-
 #phone{
     width: 420px;
-    height: 700px;
+    height: 698px;
     border: 12px solid black;
     border-radius: 30px;
     margin-left: 500px;
-   
 }
 header{
    margin: 3px;
@@ -75,7 +60,6 @@ header{
     height: 20px;
     margin:-2px 0 0 8px;
 }
-
 header{
     padding: 5px;
     
@@ -86,7 +70,6 @@ header{
     font-size: 18px;
     margin: 10px 0 0 100px;
     text-align: center;
-    
 }
 #online{
     color: #e9078b;
@@ -121,7 +104,6 @@ header{
     font-weight: 900;
     color: #000000;
     border-radius: 5px;
-
 }
 .icons-audio{
     margin-left: -4px;
@@ -190,13 +172,24 @@ nav{
     padding-top: 5px;
     margin-left:  50px;
 }
-#images{
+#fileInput {
+    display: none;
+  }
+#images {
     background: none;
    font-size: 30px;
     border: none;
    margin: -8px 3px 0 -9px;
     position: absolute;
 }
+  .fromMe img,
+  .fromMe video {
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    background: none;
+    border: none;
+  }
 #geo{
     width: 25px;
     height: 25px;
@@ -219,29 +212,77 @@ nav{
   margin: 3px 0 0 1px;
   width: 270px;
 }
-#play{
-    width: 23px;
-    height: 25px;
-    position: absolute;
-    margin:-33px -80px 15px 319px;
-}
-#play:hover{
-    cursor: pointer;
-}
-video.circular-video {
-    width: 150px;
-    height: 150px;
+#circle-recording {
+    position: fixed;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    overflow: hidden;
+    background: none;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}  
+.recording-hidden {
+    display: none !important;
+    width: 200px;
+    height: 200px;
+    background: none !important;
     object-fit: cover;
-    border: 3px solid #aaa;
-  }
-#videoPreview{
     border-radius: 50%;
-    margin: 20px auto;
-    height: 600px;
-    width:200px;
-    
 }
-ul{
-    margin-left: -15px;
-} 
+  #circle-video {
+    width: 200px;
+    height: 200px;
+    background: none !important;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  #recording-time {
+    position: absolute;
+    bottom: -25px;
+    color: rgb(255, 0, 132);
+    font-weight: bold;
+  }
+  #voice button {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    margin:-51px -40px 15px 291px;
+  }
+  #voice button.recording {
+    animation: pulse 1s infinite;
+    color: red;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .circle-video-message {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    background: transparent;
+    box-shadow: none;
+  }
+  .circle-video-message video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+   
+  }
+  

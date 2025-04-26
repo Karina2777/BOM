@@ -46,8 +46,8 @@
         <div class="fromMam">
           <p class="mam">доця будеш пекти паску</p>
           <ul>
-           <p>10 родичам </p>
-           <p> 5 на сім'ю </p>
+            <li>10 родичам</li>
+            <li>5 на сім'ю</li>
           </ul>
         </div>
 
@@ -66,25 +66,24 @@
         <div class="fromMam-speaker">
             <audio id="speaker2-sound" src="./179407_3332423-lq.mp3" preload="auto" controls></audio>
         </div>
-        <video id="videoPreview" autoplay  style="display: none;"></video>
-        <p id="geo-status" class="fromMe"></p>
-        <input type="text" id="mic-status" readonly style="border:none; background:none; width:150px; color:#e9078b;" />
-       
+      </div>
+      <div id="circle-recording" class="recording-hidden">
+        <video id="circle-video" autoplay loop muted playsinline></video>
+        <span id="recording-time">0:00</span>
       </div>
     </div>
 
     <div id="send">
-      <button  id="images">✉</button>
+      <input type="file" id="fileInput" />
+      <button id="images" type="button">✉</button>
       <nav>
         <input id="search"  type="search" placeholder="Message" aria-label="Search" />
       </nav>
-
       <div id="geo-check">
         <img onclick=" checkGeolocation()" id="geo" src="./img/khl8viqr-removebg-preview.png" alt="geo">
       </div>
-
       <div id="voice">
-        <img onclick="startRecording()" id="play" src="./img/zxksl31m-removebg-preview.png" alt="voice">
+        <button  onclick="startRecording()">🎙️</button>
       </div>
       <div id="videoRecordArea">
         <img onclick=" toggleVideoRecording()" id="video" src="./img/3lhpkpep-removebg-preview.png" alt="video">
@@ -92,7 +91,7 @@
       </div>
     </div>
   </div>
-
+ 
   <pre id="userData" style="display: none;"></pre>
   <script src="./js/main.js"></script>
 </body>
